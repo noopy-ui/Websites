@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glamor Cosmetics</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="glamor-cosmetics(style).css">
+	<link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 3,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+    </script>
+</head>
+
+<body>
+	<!--video overlay-->
+	<header class="v-header container">
+	<div class="background-wrap">
+		<video preload="auto" autoplay="true" loop="loop" muted>
+			<source src="spark-vedio/sparkle_Medium.mp4" type="video/mp4">
+				video not supported
+			</video>
+		</div>
+		   <div class="header-overlay"></div>
+		      <div class="header-content">
+			  <img src="img/logo.png" title="Glamor Cosmetics" alt="Logo" width="350px" height="350px">
+			  <h1 class="slogan">"Glamour is Shine and Confidence"</h1>
+	<!--navbar-->  
+		<div class="navbar">
+ <a href="#home" class="active">Home</a>
+ <a href="#whats-new">Whats New</a>
+  <div class="dropdown">
+    <button class="dropbtn">Makeup
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      
+      <div class="row-nav">
+        <div class="column-nav-img">
+          <img src="img/nav/facenav.jpg" width="120px" height="160px">
+      </div>
+          <div class="column-nav">
+           <h3>Face</h3>
+          <a href="#foundation">Foundation</a>
+          <a href="#powder">Powder</a>
+          <a href="#correct&conceal">Correct & Conceal</a>
+        </div>
+        <div class="column-nav-img">
+          <img src="img/nav/cheeksnav.jpg" width="120px" height="160px">
+      </div>
+          <div class="column-nav">
+          <h3>Cheeks</h3>
+          <a href="#blush">Blush</a>
+          <a href="#bronzing">Bronzing</a>
+          <a href="#contour&highlight">Contour & Highlight</a>
+        </div>
+        <div class="column-nav-img">
+          <img src="img/nav/eyesnav.jpg" width="120px" height="160px">
+      </div>
+      <div class="column-nav">
+          <h3>Eyes</h3>
+          <a href="#eyeshadow">Eyeshadow</a>
+          <a href="#mascara">Mascara</a>
+          <a href="#brows">Brows</a>
+        </div>
+        <div class="column-nav-img">
+          <img src="img/nav/toolsnav.jpg" width="115px" height="160px">
+      </div>
+      <div class="column-nav">
+          <h3>Bruhes,Tools & Supplies</h3>
+          <a href="#brush">Makeup Brushes</a>
+          <a href="#tools">Makeup Tools & Supplies</a>
+        </div>
+      </div>
+       <div class="row-nav">
+        <div class="column-nav-img">
+          <img src="img/nav/lipnav.jpg" width="120px" height="160px">
+      </div>
+      <div class="column-nav">
+          <h3>Lips</h3>
+          <a href="#lipstick">Lipstick</a>
+          <a href="#lippencil&lipliner">Lip Pencil & Lip Liner</a>
+          <a href="lipgloss">Lip Gloss</a>
+        </div>
+        <div class="column-nav">
+        	<img src="img/nav/box.png" width="344px" height="240px;">
+        </div>
+         <div class="column-nav">
+        <img src="img/nav/bag.png">
+     </div> 
+    </div>
+  </div>
+  <a href="#on-sale">On Sale</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact Us</a>
+  <a href="#login">Login</a>
+  <a href="#signup">Sign Up</a>
+</div>
+</header>
+<section>
+         <div class="welcomeing">
+         	<h2>...Welcome To Glamor Cosmetics...</h2>
+         	<p>We are on a mission to find the best high quality makeup products<br>because you deserve to be glamourous.
+         	</p>
+         	<p><a href="#about">...More About Us...</a></p>
+         </div>
+		</section>
+		<!--img-links-->
+		<section>
+			<div class="row">
+				<div class="column">
+			<a href="#face"><img src="img/link-images/face-0١.jpg" width="249px" height="220px" class="image"></a>
+			    </div>
+			<div class="column">
+			    <a href="#cheecks"><img src="img/link-images/Cheeks-0١-0١.jpg" width="249px" height="220px" class="image"></a>
+			</div>
+			<div class="column">
+			    <a href="#lip"><img src="img/link-images/lips1-0١.jpg" width="249px" height="220px" class="image"></a>
+			</div>
+			<div class="column">
+			    <a href="#eye"><img src="img/link-images/Eyes1-0١.jpg" width="249px" height="220px" class="image"></a>
+			</div>
+			<div class="column">
+			    <a href="#brushes&tools"><img src="img/link-images/&-0١.jpg" width="249px" height="220px" class="image"></a>
+			</div>
+		</div>
+</section>
+<!--best seller-->
+<section>
+  <div class="waterwheel">
+   	<h3 class="glamor">...Best Seller...</h3>
+    <div id="carousel">
+     <a href="#"> <img src="img/adds/lipstick-2585174_640.jpg" id="item-1" width="400px" height="250px" /></a>
+     <a href="#"><img src="img/adds/cosmetics-1367779_640.jpg" id="item-2" width="400px" height="250px"/></a>
+     <a href="#"> <img src="img/adds/form.jpg" id="item-3" width="400px" height="250px"/></a>
+     <a href="#"> <img src="img/adds/brush-791305_640.jpg" id="item-4" width="400px" height="250px"/></a>
+     <a href="#"> <img src="img/adds/beautiful-3116587_640.jpg" id="item-5" width="400px" height="250px"/></a>
+     <a href="#"><img src="img/adds/woman-3350222_640.jpg" id="item-6" width="400px" height="250px"/></a>
+     <a href="#"><img src="img/adds/beach-1908865_640.jpg" id="item-7" width="400px" height="250px"/></a>
+     <a href="#"> <img src="img/adds/form.jpg" id="item-8" width="400px" height="250px"/></a>
+     <a href="#"> <img src="img/adds/form2.jpg" id="item-9" width="400px" height="250px"/></a>
+    </div>
+    <a href="#" id="prev" ><img src="img/left.png" width="50px" height="50px"></a>  <a href="#" id="next" ><img src="img/right.png" width="50px" height="50px"></a>
+</div>
+
+</section>
+
+<!--ads&tips-->
+<section>
+	<h2 class="glamor">...Glamor Makeup Styles...</h2>
+	<div class="row-tip">
+	<div class="column-tip">
+		<div class="content-tip">
+			<img src="img/adds/woman-3350222_640.jpg" alt="gold-rose" style="width: 100%;">
+			<h3>Shimmery Rose-Gold Eyeshadow and dramatic Hot-Pink Lipstick</h3>
+			<p>For this look you will need:<br>
+			 Vibrant Shadow the Fear Less color …<a href="">take me there</a><br>
+Then you will need our Felt Tip Liner color black…<a href="">take me there</a><br>
+Finally the Liquid Lipstick Matte the No Filter color…<a href="">take me there</a>
+</p>
+</div>
+</div>
+<div class="column-tip">
+	<div class="content-tip">
+		<img src="img/adds/beach-1908865_640.jpg" alt="be brave" style="width: 100%;">
+		<h3>Be brave Black Eyeliner and Deep-Violate Lipstick</h3>
+		<p>For this look you will need:<br>
+The Gel Eye Liner color black…<a href="">take me there</a><br>
+Also, the Cream Shadow color Little Black Book…<a href="">take me there</a><br>
+Finally the Sheer Shine Lipstick color Air Kiss…<a href="">take me there</a>
+</p>
+</div>
+</div>
+</div>
+<div class="row-tip">
+<div class="column-tip">
+	<div class="content-tip">
+		<img src="img/adds/form2.jpg" alt="royal-look" style="width: 100%;">
+		<h3>Royal wing and Red lips</h3>
+		<p>For tis look you will need:<br>
+Signature Shadow Quad the Smoke and Mirrors color…<a href="">take me there</a><br>
+Also, you will need the Automatic Long-Lasting Eyeliner color Onyx…<a href="">take me there</a><br>
+Finally the Luxury Lip Gloss color Ice Wine…<a href="">take me there</a>
+</p>
+</div>
+</div>
+
+<div class="column-tip">
+	<div class="content-tip">
+		<img src="img/adds/girl-2366438_640.jpg" alt="pearl" style="width: 100%;">
+		<h3>Pearl Smoke </h3>
+		<p>For this look you will need:<br>
+Liquid Shadow both Constellation and Aurora colors…<a href="">take me there</a><br>
+Also Waterproof Gel Lip Liner the Sweetie Pie color…<a href="">take me there</a><br>
+Finally Cream Lipstick the Ravishing Rose color…<a href="">take me there</a>
+</p>
+</div>
+</div>
+</div>
+</section>
+<footer>
+	<div class="footer">
+		<p>Share:<br><img src="img/facebook.png" width="50px;" height="50px;"><img src="img/insta.png" width="50px;"
+		 height="50px;">
+	    <img src="img/twit.png" width="50px;" height="50px;"></p>
+		<p>
+		  <a href="#home">Home|</a>
+		  <a href="#whats-new">Whats New|</a>
+		  <a href="#home">Makeup|</a>
+		  <a href="#on-sale">On Sale|</a>
+          <a href="#about">About Us|</a>
+          <a href="#contact">Contact Us|</a>
+          <a href="#login">Login|</a>
+          <a href="#signup">Sign Up</a>
+      </p>
+      <p>Glamor Cosmetics&copy2018.</p>
+	</div>
+</footer>
+</body>
+</html>
+			
+
+
+
+    
+
+
+
+
+
+
+
+	
+		
+								
