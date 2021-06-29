@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Focus/AboutUs.com</title>
+	<link rel="stylesheet" type="text/css" href="FocusHStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	
+</head>
+<Top>
+
+	<!--nav-->
+
+	
+<div class="b">
+	<button class="btn"><a  href=""> <i class="fa fa-user"></i> Login</a></button>
+
+	<button class="btn"><a  href=""><i class="fa fa-globe"></i> Sign Up</a></button>
+
+	<button class="btn"><a  href=""><i class="fa fa-shopping-cart"></i> Shop</a></button>
+</div>
+	<div class="navbar">
+		<img src="fmg/flogo.png" width="120px" height="90px">
+		<ul class="nav">
+  <li> <a href="FocusHome.html"><i class="fa fa-home"></i>Home</a></li>
+    <li> <a href="camera.html"><i class="fa fa-info"></i>About</a></li>
+    <li> <a href="shop.html"><i class="fa fa-camera"></i>Cameras</a></li>
+    <li> <a href="accessories.html"><i class="fa fa-spinner"></i>Accessories</a></li>
+    <li> <a href="contact.html"><i class="fa fa-envelope"></i>Contact Us</a></li>
+    <li> <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div></li>
+</ul>
+</div>
+</Top>
+<header>
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="fmg/olmpban.jpg"height="600px" style="width:100%;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Olympus</h3>
+      <p><b><a href="shop.html" style="text-decoration: none; background-color: red; color: white;">Buy for 120$ With Extra Lence</a></b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="fmg/equipment-768534_1920.jpg"height="600px" style="width:100%;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Accessories</h3>
+      <p><b><a href="shop.html" style="text-decoration: none; background-color: yellow, color:white;">New Bunddle Arrival Nikon Full-Pack 500$</a></b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="fmg/drone-1245980_1920.jpg" height="600px" style="width:100%;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Drone Accessories</h3>
+      <p><b><a href="shop.html" style="text-decoration: none; background-color: blue; color: white;">GOpro-Special Pack 800$</a></b></p>    
+    </div>
+  </div>
+</header>
+<body>
+
+
+	<div  class="abouts">
+		<h1>About us:</h1>
+		<p>Focus mission is to provide the most elaborate coverage of digital photography gear in the world.</p>
+		<p>We try to inspire camera enthusiasts or anyone new to the world of photography to celebrate the moment and inspire<br> others to do the same. From cameras to accessories, everything we do is geared to help you capture life as you live it, <br>share the experience and pass on the stoke. We believe that sharing our experiences makes them more meaningful and way more fun.</p>
+		<p>Many thanks to all our regular visitors and warm welcome to new visitors.</p>
+		
+	</div>
+
+</body>
+<footer style="background-color: #4E4C4C; padding: 80px;">
+	<div>
+		<table class="tb">
+			<tr>
+				<td><a href="">About</a></td>
+				<td><a href="">Account</a></td>
+				<td><a href="">Camers Softwares</a></td>
+				<td><a href="">Subscribe</a></td>
+			
+			</tr>
+			<tr>
+				<td><a href="">News</a></td>
+				<td><a href="">Order status</a></td>
+				<td><a href="">clearance+Refurbished</a></td>
+				<td><a href="">Focus trade up</a></td>
+				
+			</tr>
+			<tr>
+				<td><a href="">Careers</a></td>
+				<td><a href=""></a></td>
+				<td><a href="">Contact us</a></td>
+				<td><a href="">Shop</a></td>
+				
+			</tr>
+			<tr>
+				<td><a href="">Terms of use</a></td>
+				<td><a href=""></a></td>
+				<td><a href="">Distributers</a></td>
+				<td><a href="">Accessibility</a></td>
+			
+			</tr>
+		</table>
+	</div>
+	<div>
+		<h3 style="text-align: center; color: white; font-size: 13px; padding-top: 80px;">&copy Foucus.com 2020</h3>
+	</div>
+</footer>
+<script>
+	var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+</script>
+</html>
